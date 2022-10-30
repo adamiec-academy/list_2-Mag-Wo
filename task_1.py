@@ -16,8 +16,3 @@ def remove_parentheses(text):
 
 
     return result
-
- text = "(Nie) jest tak źle"
-
-print(remove_parentheses(text))
-
