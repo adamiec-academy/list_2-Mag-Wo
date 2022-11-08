@@ -1,14 +1,19 @@
 def remove_parentheses(text):
     result = ""
     inside = False
+    spacebar = False
 
     for l in text:
         if l == "(":
             inside = True
         elif l == ")":
             inside = False
+            spacebar = True
         elif not inside:
-            result += l
+            if spacebar:
+                spacebar = False
+            else:
+                result += l
 
     return result
 
