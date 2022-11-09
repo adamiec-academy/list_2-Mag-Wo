@@ -7,8 +7,6 @@ def is_prime(n):
         else:
             return True
 
-print(is_prime(100000))
-
 
 def is_diabolic(n):
     if "666" in str(n):
