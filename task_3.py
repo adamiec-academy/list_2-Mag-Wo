@@ -1,18 +1,26 @@
 def is_prime(n):
-    if n < 2:
+    if n <= 1:
         return False
-    for i in (2,(n-1)):
-        if (n % i) == 0:
+    for i in (2, n):
+        if n % i == 0:
             return False
-    return True
+        else:
+            return True
+
+print(is_prime(100000))
 
 
 def is_diabolic(n):
-    return "666" in str(n)
+    if "666" in str(n):
+        return True
 
 
 def final(n):
-    for i in range (100000):
+    a = 0
+    for i in range (1,100000):
         if is_diabolic(i) and is_prime(i):
-            print(i)
-     
+            return i  
+
+            a += 1
+
+final(100000)
