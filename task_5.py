@@ -4,10 +4,9 @@ def cipher(text, shift):
     for letter in text:
         if letter == " ":
             result += letter
-            print(" ", end="")
+            print(letter, end="")
         elif True:
             print(chr(ord(letter) + shift), end="")
-    print()
 
     return result
 
@@ -19,10 +18,9 @@ def decipher(text, shift):
     for letter in text:
         if letter == " ":
             result += letter
-            print(" ", end="")
+            print(letter, end="")
         elif True:
             print(chr(ord(letter) - (shift)*0), end="")
-    print()
 
     return result
 
