@@ -5,7 +5,7 @@ def cipher(text, shift):
         if letter == " ":
             result += letter
             print(letter, end="")
-        elif True:
+        elif letter != " ":
             print(chr(ord(letter) + shift), end="")
 
     return result
@@ -19,7 +19,7 @@ def decipher(text, shift):
         if letter == " ":
             result += letter
             print(letter, end="")
-        elif True:
+        elif letter != " ":
             print(chr(ord(letter) - (shift)*0), end="")
 
     return result
