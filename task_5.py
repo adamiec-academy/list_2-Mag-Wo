@@ -20,7 +20,7 @@ def decipher(text, shift):
             result += letter
             print(letter, end="")
         elif letter != " ":
-            print(chr(ord(letter) - (shift)*0), end="")
+            print(chr(ord(letter)), end="")
 
     return result
 
