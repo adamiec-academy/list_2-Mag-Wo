@@ -3,24 +3,15 @@ def cipher(text, shift):
 
     for letter in text:
         if letter == " ":
-            result += letter
-            print(letter, end="")
-        elif letter != " ":
-            print(chr(ord(letter) + shift), end="")
+            result += letter         
+        elif (letter.isupper()):
+            result += chr((ord(letter) + shift -65) % 26 + 65)
+        else:
+            result += chr((ord(letter) + shift -97) % 26 + 97)
 
     return result
 
 
 def decipher(text, shift):
-
-    result = ""
-
-    for letter in text:
-        if letter == " ":
-            result += letter
-            print(letter, end="")
-        elif letter != " ":
-            print(chr(ord(letter)), end="")
-
-    return result
+    return cipher(text, -shift)
 
