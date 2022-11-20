@@ -10,13 +10,3 @@ def is_prime(n):
 def is_diabolic(n):
     return "666" in str(n)
 
-
-def final(n):
-    a = 0
-    for i in range (1,n):
-        if is_diabolic(i) and is_prime(i):
-            return i  
-
-            a += 1
-
-final(n)
